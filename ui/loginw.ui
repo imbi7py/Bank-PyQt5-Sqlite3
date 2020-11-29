@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>loginw</class>
+ <widget class="QWidget" name="loginw">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>375</width>
+    <height>270</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>250</width>
+    <height>180</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>375</width>
+    <height>270</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Login</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: #bdbdbd;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>25</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>25</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <property name="spacing">
+      <number>20</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="logo">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>28</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Nameless&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>7</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="lbl_input">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>Введите имя пользователя и пароль</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>7</number>
+         </property>
+         <item>
+          <widget class="QLineEdit" name="le_username">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+	background: #E0E0E0;
+	border: 2px solid #666666;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #000000;
+ }
+QLineEdit:hover {
+	background: #E0E0E0;
+	border: 2px solid #666666;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #000000;
+ }</string>
+           </property>
+           <property name="maxLength">
+            <number>128</number>
+           </property>
+           <property name="placeholderText">
+            <string>Введите имя пользователя:</string>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="le_pswd">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+	background: #E0E0E0;
+	border: 2px solid #666666;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #000000;
+ }
+QLineEdit:hover {
+	background: #E0E0E0;
+	border: 2px solid #666666;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #000000;
+ }</string>
+           </property>
+           <property name="maxLength">
+            <number>64</number>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+           <property name="placeholderText">
+            <string>Введите пароль:</string>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="spacing">
+      <number>15</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="btn_login">
+       <property name="minimumSize">
+        <size>
+         <width>105</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>130</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	background: #cdcdcd;
+	border: 2px solid #F9F9F9;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #111111;
+	border-right-color: #111111;
+	color: #111111;
+ }
+QPushButton:pressed {
+	background: #aaaaaa;
+	border: 2px solid #111111;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #333333;
+ }
+QPushButton:hover {
+	background: #aaaaaa;
+	color: #333333;
+ }</string>
+       </property>
+       <property name="text">
+        <string>Войти</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="chkbox_remember">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Запомнить</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="btn_to_registration">
+       <property name="minimumSize">
+        <size>
+         <width>105</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>130</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	background: #cdcdcd;
+	border: 2px solid #F9F9F9;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #111111;
+	border-right-color: #111111;
+	color: #111111;
+ }
+QPushButton:pressed {
+	background: #aaaaaa;
+	border: 2px solid #111111;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #333333;
+ }
+QPushButton:hover {
+	background: #aaaaaa;
+	color: #333333;
+ }</string>
+       </property>
+       <property name="text">
+        <string>Регистрация</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_pswd_forget">
+       <property name="minimumSize">
+        <size>
+         <width>125</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>145</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	background: #cdcdcd;
+	border: 2px solid #F9F9F9;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #111111;
+	border-right-color: #111111;
+	color: #111111;
+ }
+QPushButton:pressed {
+	background: #aaaaaa;
+	border: 2px solid #111111;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #333333;
+ }
+QPushButton:hover {
+	background: #aaaaaa;
+	color: #333333;
+ }</string>
+       </property>
+       <property name="text">
+        <string>Забыли пароль?</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

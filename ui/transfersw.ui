@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>transfersw</class>
+ <widget class="QWidget" name="transfersw">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>375</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>450</width>
+    <height>375</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>450</width>
+    <height>375</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Nameless Bank</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: #bdbdbd;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <property name="spacing">
+    <number>10</number>
+   </property>
+   <property name="leftMargin">
+    <number>10</number>
+   </property>
+   <property name="topMargin">
+    <number>10</number>
+   </property>
+   <property name="rightMargin">
+    <number>10</number>
+   </property>
+   <property name="bottomMargin">
+    <number>10</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <property name="spacing">
+      <number>12</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>12</number>
+       </property>
+       <item>
+        <widget class="QComboBox" name="cmbbox_type_input">
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>250</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QComboBox {
+	background: #E0E0E0;
+	border: 2px solid #666666;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #000000;
+ }</string>
+         </property>
+         <property name="currentText">
+          <string>Перевод по id пользователя</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Перевод по id пользователя</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Перевод по номеру телефона</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="le_user">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+	background: #E0E0E0;
+	border: 2px solid #666666;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #000000;
+ }
+QLineEdit:hover {
+	background: #E0E0E0;
+	border: 2px solid #666666;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #000000;
+ }</string>
+         </property>
+         <property name="maxLength">
+          <number>128</number>
+         </property>
+         <property name="placeholderText">
+          <string>Введите id пользователя:</string>
+         </property>
+         <property name="clearButtonEnabled">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="le_count">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+	background: #E0E0E0;
+	border: 2px solid #666666;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #000000;
+ }
+QLineEdit:hover {
+	background: #E0E0E0;
+	border: 2px solid #666666;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #000000;
+ }</string>
+         </property>
+         <property name="maxLength">
+          <number>128</number>
+         </property>
+         <property name="placeholderText">
+          <string>Сумма перевода:</string>
+         </property>
+         <property name="clearButtonEnabled">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="le_msg">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+	background: #E0E0E0;
+	border: 2px solid #666666;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #000000;
+ }
+QLineEdit:hover {
+	background: #E0E0E0;
+	border: 2px solid #666666;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #000000;
+ }</string>
+         </property>
+         <property name="maxLength">
+          <number>128</number>
+         </property>
+         <property name="placeholderText">
+          <string>Сообщение получателю</string>
+         </property>
+         <property name="clearButtonEnabled">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>12</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="lbl_username">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>Получатель:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lbl_commission">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>Комиссия:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lbl_payid">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>Номер платежа:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lbl_phone_user">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>Номер телефона получателя:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lbl_email">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>e-mail получателя:</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item alignment="Qt::AlignHCenter">
+    <widget class="QPushButton" name="btn_transfer">
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	background: #cdcdcd;
+	border: 2px solid #F9F9F9;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #111111;
+	border-right-color: #111111;
+	color: #111111;
+ }
+QPushButton:pressed {
+	background: #aaaaaa;
+	border: 2px solid #111111;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #333333;
+ }
+QPushButton:hover {
+	background: #aaaaaa;
+	color: #333333;
+ }</string>
+     </property>
+     <property name="text">
+      <string>Перевести</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
